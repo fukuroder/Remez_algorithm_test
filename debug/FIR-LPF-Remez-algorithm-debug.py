@@ -215,7 +215,7 @@ def remez(
         # 収束判定（誤差の絶対値が等しくかつ符号が交互に並んでいれば終了）
         if check_convergence(list_a, list_x, w0):
 
-            debug_plot(list_a, list_x, w0, h, 1, str(count).zfill(3)  + "_result.png")
+            debug_plot(list_a, list_x, w0, h, 1, str(count).zfill(3)  + "_step4.png")
 
             # cos関数系からexp関数系の表現に変換
             list_h = [a*0.5 for a in reversed(list_a[1:])] + \
